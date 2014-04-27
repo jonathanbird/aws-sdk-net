@@ -1,0 +1,6 @@
+Z:\Amazon Web Services Fork\AWSSDK_DotNet35\bin\Debug\AWSSDK.xml
+Z:\Amazon Web Services Fork\AWSSDK_DotNet35\bin\Debug\AWSSDK.dll
+Z:\Amazon Web Services Fork\AWSSDK_DotNet35\bin\Debug\AWSSDK.pdb
+Z:\Amazon Web Services Fork\AWSSDK_DotNet35\obj\Debug\AWSSDK_DotNet35.csprojResolveAssemblyReference.cache
+Z:\Amazon Web Services Fork\AWSSDK_DotNet35\obj\Debug\AWSSDK.dll
+Z:\Amazon Web Services Fork\AWSSDK_DotNet35\obj\Debug\AWSSDK.pdb

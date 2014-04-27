@@ -1,0 +1,6 @@
+Z:\Amazon Web Services Fork\AWS.iOS\bin\Release\AWSSDK.dll
+Z:\Amazon Web Services Fork\AWS.iOS\bin\Release\AWSSDK.pdb
+Z:\Amazon Web Services Fork\AWS.iOS\bin\Release\AWS.PCL.dll
+Z:\Amazon Web Services Fork\AWS.iOS\obj\Release\AWS.iOS.csprojResolveAssemblyReference.cache
+Z:\Amazon Web Services Fork\AWS.iOS\obj\Release\AWSSDK.dll
+Z:\Amazon Web Services Fork\AWS.iOS\obj\Release\AWSSDK.pdb

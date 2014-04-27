@@ -1,0 +1,3 @@
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWSSDK_DotNet45/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWSSDK_DotNet45/obj/Debug/AWSSDK.endpoints.xml
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWSSDK_DotNet45/obj/Debug/AWSSDK.dll

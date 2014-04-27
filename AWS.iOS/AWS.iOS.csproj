@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{196BF17D-4EA9-4792-81D5-0D1B146C0C27}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AWSSDK</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>AWSSDK</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__IOS__;__MOBILE__;__IOS__;__MOBILE__;BCL;BCL45;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DocumentationFile>bin\Debug\AWSSDK.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>__IOS__;__MOBILE__;BCL;BCL45;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\*.cs" Exclude="..\AWSSDK_DotNet35\AWSClientFactory.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="Missing Types\ConfigurationManager.cs" />
+    <Compile Include="Missing Types\IOrderedDictionary.cs" />
+    <Compile Include="Missing Types\SHA256CryptoServiceProvider.cs" />
+    <Compile Include="Missing Types\TraceSource.cs" />
+    <Compile Include="Type Converters\BoolTypeConverter.cs" />
+    <Compile Include="Type Converters\CoordinateTypeConverter.cs" />
+    <Compile Include="Type Converters\DateTimeTypeConverter.cs" />
+    <Compile Include="Type Converters\HashSetTypeConverter.cs" />
+    <Compile Include="Type Converters\IntEnumTypeConverter.cs" />
+    <Compile Include="Type Converters\IntListTypeConverter.cs" />
+    <Compile Include="Type Converters\TicksDateTimeConverter.cs" />
+    <Compile Include="Type Converters\TimeSpanTypeConverter.cs" />
+    <EmbeddedResource Include="..\AWSSDK_DotNet35\endpoints.xml">
+      <Link>endpoints.xml</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Runtime\*" Exclude="..\AWSSDK_DotNet35\Amazon.Runtime\*.bcl35.cs;..\AWSSDK_DotNet35\Amazon.Runtime\AmazonWebServiceClient.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Runtime\Internal\*" Exclude="..\AWSSDK_DotNet35\Amazon.Runtime\Internal\*.bcl35.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Runtime\Internal\Auth\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Runtime\Internal\Transform\*" Exclude="..\AWSSDK_DotNet35\Amazon.Runtime\Internal\Transform\HttpWebRequestResponseData.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Runtime\Internal\Util\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\BouncyCastle\Asn1\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\BouncyCastle\Asn1\Utilities\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\BouncyCastle\Math\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\BouncyCastle\OpenSsl\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\BouncyCastle\OpenSsl\pem\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\Ionic.Zlib\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\ThirdParty\Json\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Auth\AccessControlPolicy\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Auth\AccessControlPolicy\ActionIdentifiers\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Auth\AccessControlPolicy\Internal\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\*" Exclude="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\*.DS_Store;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\IAmazonDynamoDB.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\AmazonDynamoDBClient.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DynamoDBAsync.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\*" Exclude="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\DocumentBatchGet.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\DocumentBatchWrite.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\Search.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\Table.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\DocumentBatchGet.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\DocumentBatchWrite.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\Search.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DocumentModel\Table.Sync.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\*" Exclude="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\BatchGet.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\BatchWrite.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\Context.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\IDynamoDBContext.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\BatchGet.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\BatchWrite.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\Context.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\IDynamoDBContext.Sync.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\AsyncSearch.Async.cs;..\AWSSDK_DotNet35\Amazon.DynamoDBv2\DataModel\Attributes.cs">
+      <Visible>True</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\Util\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.DynamoDBv2\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.IdentityManagement\*" Exclude="..\AWSSDK_DotNet35\Amazon.IdentityManagement\IAmazonIdentityManagementService.cs;..\AWSSDK_DotNet35\Amazon.IdentityManagement\AmazonIdentityManagementServiceClient.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.IdentityManagement\Util\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.IdentityManagement\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.IdentityManagement\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\*" Exclude="..\AWSSDK_DotNet35\Amazon.S3\IAmazonS3.cs;..\AWSSDK_DotNet35\Amazon.S3\AmazonS3Client.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\Encryption\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\IO\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\Model\*" Exclude="..\AWSSDK_DotNet35\Amazon.S3\Model\*.bcl35.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\Transfer\*" Exclude="..\AWSSDK_DotNet35\Amazon.S3\Transfer\*.bcl35.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\Transfer\Internal\*" Exclude="..\AWSSDK_DotNet35\Amazon.S3\Transfer\Internal\*.bcl35.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.S3\Util\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.Util\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.SecurityToken\*" Exclude="..\AWSSDK_DotNet35\Amazon.SecurityToken\IAmazonSecurityTokenService.cs;..\AWSSDK_DotNet35\Amazon.SecurityToken\AmazonSecurityTokenServiceClient.cs">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.SecurityToken\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet35\Amazon.SecurityToken\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Auth\AccessControlPolicy\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Auth\AccessControlPolicy\ActionIdentifiers\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Auth\AccessControlPolicy\Internal\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.DynamoDBv2\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.DynamoDBv2\DataModel\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.DynamoDBv2\DocumentModel\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.DynamoDBv2\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.DynamoDBv2\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.IdentityManagement\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.IdentityManagement\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.IdentityManagement\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Runtime\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Runtime\Internal\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Runtime\Internal\Auth\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Runtime\Internal\Transform\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.Runtime\Internal\Util\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\Encryption\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\IO\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\Transfer\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\Transfer\Internal\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.S3\Util\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.SecurityToken\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.SecurityToken\Model\*">
+      <Visible>False</Visible>
+    </Compile>
+    <Compile Include="..\AWSSDK_DotNet45\Amazon.SecurityToken\Model\Internal\MarshallTransformations\*">
+      <Visible>False</Visible>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AWSSDK_DotNet45\GlobalSuppressions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AWS.PCL\AWS.PCL.csproj">
+      <Project>{D5E0DFDB-6033-4920-8AD9-160B78092F75}</Project>
+      <Name>AWS.PCL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+</Project>

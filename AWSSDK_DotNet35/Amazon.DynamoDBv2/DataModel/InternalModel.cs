@@ -346,6 +346,15 @@ namespace Amazon.DynamoDBv2.DataModel
                     DynamoDBPropertyAttribute propertyAttribute = attribute as DynamoDBPropertyAttribute;
                     if (propertyAttribute != null)
                     {
+
+                        if (propertyAttribute.Converter == null && propertyAttribute.ConverterString != null)
+                        {
+                            var propertyConverter = Type.GetType("Amazon.DynamoDBv2.DataModel." + propertyAttribute.ConverterString, true);
+                            if (propertyConverter == null) throw new InvalidOperationException("Custom Property Converter " + propertyAttribute.ConverterString + " can not be found");
+                            propertyAttribute.Converter = propertyConverter;
+                        }
+
+
                         if (!string.IsNullOrEmpty(propertyAttribute.AttributeName))
                             attributeName = GetAccurateCase(config, propertyAttribute.AttributeName);
 

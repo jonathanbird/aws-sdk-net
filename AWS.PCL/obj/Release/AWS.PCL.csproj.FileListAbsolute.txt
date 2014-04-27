@@ -1,0 +1,3 @@
+Z:\Amazon Web Services Fork\AWS.PCL\bin\Release\AWS.PCL.dll
+Z:\Amazon Web Services Fork\AWS.PCL\obj\Release\AWS.PCL.csprojResolveAssemblyReference.cache
+Z:\Amazon Web Services Fork\AWS.PCL\obj\Release\AWS.PCL.dll

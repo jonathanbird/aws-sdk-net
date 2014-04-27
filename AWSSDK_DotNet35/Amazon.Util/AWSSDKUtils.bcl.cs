@@ -43,6 +43,11 @@ namespace Amazon.Util
 
         static string DetermineFramework()
         {
+
+        #if __IOS__
+            return "4.0";
+        #else
+
             try
             {
                 if (Environment.Version.Major >= 4 && Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Net Framework Setup\\NDP\\v4") != null)
@@ -59,6 +64,7 @@ namespace Amazon.Util
             }
 
             return "Unknown";
+        #endif
         }
 
         static string DetermineOSVersion()

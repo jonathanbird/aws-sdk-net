@@ -1,0 +1,5 @@
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWS.PCL/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWS.PCL/bin/Debug/AWS.PCL.dll.mdb
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWS.PCL/bin/Debug/AWS.PCL.dll
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWS.PCL/obj/Debug/AWS.PCL.dll
+/Fast Documents/Mono Projects/Amazon Web Services Fork/AWS.PCL/obj/Debug/AWS.PCL.dll.mdb

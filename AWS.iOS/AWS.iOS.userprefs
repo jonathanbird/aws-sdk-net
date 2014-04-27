@@ -1,0 +1,70 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../AWSSDK_DotNet35/Amazon.DynamoDBv2/DataModel/InternalModel.cs">
+    <Files>
+      <File FileName="../../Amazon Web Services v2.0.2.3/AWS.iOS/PropertyConverters/IntEnumTypeConverter.cs" Line="1" Column="1" />
+      <File FileName="../../TimeClockSeven/Model.PCL/ClockEntry.cs" Line="1" Column="1" />
+      <File FileName="../../Amazon Web Services v2.0.2.3/AWS.iOS/4.5 Source/Amazon.DynamoDBv2/DataModel/InternalModel.cs" Line="1" Column="1" />
+      <File FileName="../AWSSDK_DotNet45/AWSClientFactory.cs" Line="1" Column="1" />
+      <File FileName="../AWSSDK_DotNet45/Amazon.DynamoDBv2/AmazonDynamoDBClient.cs" Line="1" Column="1" />
+      <File FileName="../AWSSDK_DotNet45/Amazon.S3/AmazonS3Client.cs" Line="1" Column="1" />
+      <File FileName="../AWSSDK_DotNet45/Amazon.Runtime/AmazonWebServiceClient.cs" Line="35" Column="18" />
+      <File FileName="../AWSSDK_DotNet35/Amazon.Runtime/AmazonWebServiceClient.cs" Line="1" Column="1" />
+      <File FileName="../AWSSDK_DotNet35/Amazon.DynamoDBv2/DataModel/InternalModel.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Developer/MonoTouch/Source/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpHeaders.cs" line="259" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/CheckName/Program.cs" line="23" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/CheckName/Program.cs" line="22" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache/Table.cs" line="27" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/TestApplication/Main.cs" line="80" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/TestApplication/Main.cs" line="82" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/CacheTest.cs" line="130" column="25" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/CacheTest.cs" line="158" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/CacheTest.cs" line="160" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Timestamp.iOS.Test/TimestampTest.cs" line="17" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache/DataStore.cs" line="182" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Model.Test/Serialization.cs" line="32" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/SerializationTest/Program.cs" line="24" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/SerializationTest/Program.cs" line="47" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AsyncTest.cs" line="22" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AkavacheTest.cs" line="61" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AkavacheTest.cs" line="117" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AkavacheTest.cs" line="78" column="26" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AkavacheTest.cs" line="114" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AkavacheTest.cs" line="133" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Cache.Test/AkavacheTest.cs" line="34" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Model.Test/AkavacheTest.cs" line="27" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Core.Model.Test/AkavacheTest.cs" line="41" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.Test/CacheTest.cs" line="161" column="16" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/AWS.iOS.Provider.Test/ErrorsTest.cs" line="58" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/AWS.iOS.Provider.Test/ErrorsTest.cs" line="55" column="24" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.Test/CacheTest.cs" line="59" column="19" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/RecordCollection.cs" line="237" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/ServiceLocator.Test/KeyChainTest.cs" line="18" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/ServiceLocator.Test/KeyChainTest.cs" line="39" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/TimeClockSeven.iOS/ExceptionViewController.cs" line="36" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/DataStore.cs" line="152" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/DataStore.cs" line="150" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/TimeClockSeven.iOS/ClockEntry/Time Sheet/TimeSheetRowCollection.cs" line="30" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/UIDatePickerTest/DatePickerTest.cs" line="20" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.Test/RangedQuery.cs" line="38" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.Test/RangedQuery.cs" line="47" column="36" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/TableSheetLog/TimeSheetLogRowCollection.cs" line="524" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/TableSheetLog/ClockEntryStack.cs" line="147" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/TableSheetLog/ClockEntryStack.cs" line="157" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/KeyChainTest/AppDelegate.cs" line="18" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/TableSheetLog/TimeSheetLog2.cs" line="22" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/TableSheetLog/Stack.cs" line="25" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/TimeClockSeven/Datastore.PCL/TableSheetLog/TimeSheetLog2.cs" line="116" column="1" />
+      <Breakpoint file="/Developer/MonoTouch/Source/mono/mcs/class/System/System.Net/ServicePoint.cs" line="282" column="1" />
+      <Breakpoint file="/Fast Documents/Mono Projects/Amazon Web Services Fork/AWSSDK_DotNet35/Amazon.DynamoDBv2/DataModel/InternalModel.cs" line="307" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>../AWS.Portable/AWS.PCL.csproj</String>
+  </DisabledProjects>
+</Properties>

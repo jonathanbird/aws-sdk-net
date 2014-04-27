@@ -461,7 +461,10 @@ WebExceptionStatusesToRetryOn.Contains(we.Status)
 
         protected HttpClient ConfigureHttpClient()
         {
-#if BCL45
+
+#if __IOS__
+            var httpMessageHandler = new HttpClientHandler();
+#elif BCL45
             var httpMessageHandler = new WebRequestHandler();
             if (this.Config.ReadWriteTimeout.HasValue)
             {

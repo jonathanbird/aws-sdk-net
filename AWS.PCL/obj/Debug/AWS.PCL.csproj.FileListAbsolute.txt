@@ -1,0 +1,5 @@
+Z:\Amazon Web Services Fork\AWS.PCL\bin\Debug\AWS.PCL.dll
+Z:\Amazon Web Services Fork\AWS.PCL\bin\Debug\AWS.PCL.pdb
+Z:\Amazon Web Services Fork\AWS.PCL\obj\Debug\AWS.PCL.csprojResolveAssemblyReference.cache
+Z:\Amazon Web Services Fork\AWS.PCL\obj\Debug\AWS.PCL.dll
+Z:\Amazon Web Services Fork\AWS.PCL\obj\Debug\AWS.PCL.pdb

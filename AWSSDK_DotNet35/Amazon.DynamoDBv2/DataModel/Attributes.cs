@@ -114,7 +114,7 @@ namespace Amazon.DynamoDBv2.DataModel
     /// a custom converter.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
-    public class DynamoDBPropertyAttribute : DynamoDBRenamableAttribute
+    public partial class DynamoDBPropertyAttribute : DynamoDBRenamableAttribute
     {
         /// <summary>
         /// Default constructor
@@ -175,7 +175,7 @@ namespace Amazon.DynamoDBv2.DataModel
     /// a Primitive object.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
-    public class DynamoDBHashKeyAttribute : DynamoDBPropertyAttribute
+    public partial class DynamoDBHashKeyAttribute : DynamoDBPropertyAttribute
     {
         /// <summary>
         /// Default constructor
@@ -230,7 +230,7 @@ namespace Amazon.DynamoDBv2.DataModel
     /// a Primitive object.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
-    public class DynamoDBRangeKeyAttribute : DynamoDBPropertyAttribute
+    public partial class DynamoDBRangeKeyAttribute : DynamoDBPropertyAttribute
     {
         /// <summary>
         /// Default constructor
@@ -349,7 +349,7 @@ namespace Amazon.DynamoDBv2.DataModel
     /// Members that are marked as a Local Secondary Index range key element must be convertible to a Primitive object.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
-    public sealed class DynamoDBLocalSecondaryIndexRangeKeyAttribute : DynamoDBPropertyAttribute
+    public sealed partial class DynamoDBLocalSecondaryIndexRangeKeyAttribute : DynamoDBPropertyAttribute
     {
         /// <summary>
         /// Index associated with this range key
@@ -375,5 +375,96 @@ namespace Amazon.DynamoDBv2.DataModel
         {
             IndexNames = indexNames.Distinct(StringComparer.Ordinal).ToArray();
         }
+    }
+
+
+
+    // JTB To use these classes make the other classes partial and add the following to line 248 in InternalModel.cs
+    //	if (propertyAttribute.Converter == null && propertyAttribute.ConverterString != null) {
+    //		var propertyConverter = Type.GetType ("Amazon.DynamoDBv2.DataModel." + propertyAttribute.ConverterString, true);
+    //		if (propertyConverter == null) throw new InvalidOperationException ("Custom Property Converter " + propertyAttribute.ConverterString + " can not be found");
+    //		propertyAttribute.Converter = propertyConverter;
+    //	}
+
+    /// <summary>
+    /// DynamoDB property attribute.
+    /// Can be used to specify an alternative attribute name or configure
+    /// a custom converter.
+    /// </summary>
+    public partial class DynamoDBPropertyAttribute : DynamoDBRenamableAttribute
+    {
+        /// <summary>
+        /// Constructor that specifies an alternate attribute name and a custom converter.
+        /// 
+        /// Converter must be the type of a class that implements IPropertyConverter.
+        /// </summary>
+        /// <param name="attributeName">
+        /// Name of attribute to be associated with property or field.
+        /// </param>
+        /// <param name="converterString">Custom converter type name.</param>
+        public DynamoDBPropertyAttribute(string attributeName, string converterString)
+            : base(attributeName)
+        {
+            ConverterString = converterString;
+        }
+
+        public string ConverterString
+        {
+            get;
+            set;
+        }
+    }
+
+    public partial class DynamoDBHashKeyAttribute : DynamoDBPropertyAttribute
+    {
+        /// <summary>
+        /// Constructor that specifies an alternate attribute name and a custom converter.
+        /// 
+        /// Converter must be the type of a class that implements IPropertyConverter.
+        /// </summary>
+        /// <param name="attributeName">
+        /// Name of attribute to be associated with property or field.
+        /// </param>
+        /// <param name="converterString">Custom converter type.</param>
+        public DynamoDBHashKeyAttribute(string attributeName, string converterString)
+            : base(attributeName, converterString)
+        {
+        }
+    }
+
+    public partial class DynamoDBRangeKeyAttribute : DynamoDBPropertyAttribute
+    {
+        /// <summary>
+        /// Constructor that specifies an alternate attribute name and a custom converter.
+        /// 
+        /// Converter must be the type of a class that implements IPropertyConverter.
+        /// </summary>
+        /// <param name="attributeName">
+        /// Name of attribute to be associated with property or field.
+        /// </param>
+        /// <param name="converterString">Custom converter type.</param>
+        public DynamoDBRangeKeyAttribute(string attributeName, string converterString)
+            : base(attributeName, converterString)
+        {
+        }
+    }
+
+    public sealed partial class DynamoDBLocalSecondaryIndexRangeKeyAttribute : DynamoDBPropertyAttribute
+    {
+
+        /// <summary>
+        /// Constructor that accepts a single inde name.
+        /// </summary>
+        /// <param name="indexName">Name of the Local Secondary Index this range key belongs to.</param>
+        /// <param name="attributeName">
+        /// Name of attribute to be associated with property or field.
+        /// </param>
+        /// <param name="converterString">Custom converter type.</param>
+        public DynamoDBLocalSecondaryIndexRangeKeyAttribute(string indexName, string attributeName, string converterString)
+            : base(attributeName, converterString)
+        {
+            IndexNames = new string[] { indexName };
+        }
+
     }
 }

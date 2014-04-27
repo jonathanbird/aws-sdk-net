@@ -57,7 +57,9 @@ namespace Amazon.Runtime
         private bool resignRetries = false;
         private ICredentials proxyCredentials;
         private bool logMetrics = AWSConfigs.LogMetrics;
-        private bool disableLogging = false;
+        // JTB
+        private bool disableLogging = true;
+        // JTB
         private TimeSpan? timeout = null;
 
         /// <summary>

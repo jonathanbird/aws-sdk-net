@@ -1,0 +1,4 @@
+/Fast Documents/Mono Projects/TimeClockSeven/AWS.Portable/obj/Release/.NETPortable,Version=v4.5,Profile=Profile49.AssemblyAttribute.cs
+/Fast Documents/Mono Projects/TimeClockSeven/AWS.Portable/bin/Release/AWS.Portable.dll
+/Fast Documents/Mono Projects/TimeClockSeven/AWS.Portable/obj/Release/AWS.Portable.dll
+/Fast Documents/Mono Projects/TimeClockSeven/AWS.Portable/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs

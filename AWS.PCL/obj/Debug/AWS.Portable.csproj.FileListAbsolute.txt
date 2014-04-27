@@ -1,0 +1,10 @@
+Z:\TimeClockSeven\AWS.Portable\bin\Debug\AWS.Portable.dll
+Z:\TimeClockSeven\AWS.Portable\bin\Debug\AWS.Portable.pdb
+Z:\TimeClockSeven\AWS.Portable\obj\Debug\AWS.Portable.csprojResolveAssemblyReference.cache
+Z:\TimeClockSeven\AWS.Portable\obj\Debug\AWS.Portable.dll
+Z:\TimeClockSeven\AWS.Portable\obj\Debug\AWS.Portable.pdb
+Z:\Amazon Web Services Fork\AWS.Portable\bin\Debug\AWS.Portable.dll
+Z:\Amazon Web Services Fork\AWS.Portable\bin\Debug\AWS.Portable.pdb
+Z:\Amazon Web Services Fork\AWS.Portable\obj\Debug\AWS.Portable.csprojResolveAssemblyReference.cache
+Z:\Amazon Web Services Fork\AWS.Portable\obj\Debug\AWS.Portable.dll
+Z:\Amazon Web Services Fork\AWS.Portable\obj\Debug\AWS.Portable.pdb

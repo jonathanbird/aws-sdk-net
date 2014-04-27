@@ -1,0 +1,9 @@
+C:\Users\jonbird\Desktop\aws-sdk-net-master\AWSSDK_DotNet45\bin\Debug\AWSSDK.XML
+C:\Users\jonbird\Desktop\aws-sdk-net-master\AWSSDK_DotNet45\bin\Debug\AWSSDK.dll
+C:\Users\jonbird\Desktop\aws-sdk-net-master\AWSSDK_DotNet45\bin\Debug\AWSSDK.pdb
+C:\Users\jonbird\Desktop\aws-sdk-net-master\AWSSDK_DotNet45\obj\Debug\AWSSDK_DotNet45.csprojResolveAssemblyReference.cache
+C:\Users\jonbird\Desktop\aws-sdk-net-master\AWSSDK_DotNet45\obj\Debug\AWSSDK.dll
+C:\Users\jonbird\Desktop\aws-sdk-net-master\AWSSDK_DotNet45\obj\Debug\AWSSDK.pdb
+Z:\Amazon Web Services Fork\AWSSDK_DotNet45\obj\Debug\AWSSDK_DotNet45.csprojResolveAssemblyReference.cache
+Z:\Amazon Web Services Fork\AWSSDK_DotNet45\obj\Debug\AWSSDK.dll
+Z:\Amazon Web Services Fork\AWSSDK_DotNet45\obj\Debug\AWSSDK.pdb
